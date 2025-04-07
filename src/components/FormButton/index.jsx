@@ -16,6 +16,6 @@ export default function FormButton() {
   }
 
   return (
-    <a href='' onClick={(e) => goToModule(e, 'formulario')} className='form_btn'>Agende sua consulta</a>
+    <a onClick={(e) => goToModule(e, 'formulario')} className='form_btn'>Agende sua consulta</a>
   )
 }
