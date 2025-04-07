@@ -30,9 +30,9 @@ export default function Header() {
       <div className='header_desktop'>
         <Link to="/"><img src={logo} alt='Logo Motion. Lê-se: Motion'/></Link>
         <nav className='menu_navegacao'>
-          <a onClick={(e) => goToModule(e, 'servicos')}>Serviços</a>
-          <Link to="/nosso_time">Nosso time</Link>
-          <a onClick={(e) => goToModule(e, 'nosso_espaco')}>Nosso espaço</a>
+          <a href='#' onClick={(e) => goToModule(e, 'servicos')}>Serviços</a>
+          <Link to="/nosso_time" href='#'>Nosso time</Link>
+          <a href='#' onClick={(e) => goToModule(e, 'nosso_espaco')}>Nosso espaço</a>
           <FormButton/>
         </nav>
       </div>
