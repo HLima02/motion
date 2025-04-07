@@ -1,0 +1,68 @@
+.motion_team_banner {
+  background-color: #fff;
+  width: 100%;
+  padding: 100px 5%;
+
+  h1 {
+    color: #20325D;
+    font-size: 45px;
+
+    &::after {
+      content: '';
+      display: block; 
+      border-bottom: 5px solid #20325D;
+      height: 5px;
+      width: 148px;
+      margin-top: 5px;
+    }
+  }
+
+  .motion_team_txt {
+    margin-top: 50px;
+    color: #424242;
+
+    h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .motion_team_txt {
+      h3 {
+        font-size: 23px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 620px) {
+    padding: 60px 5%; 
+
+    h1 {
+      font-size: 35px;
+
+      &::after {
+        border-bottom: 2px solid #20325D;
+        height: 3px;
+      }
+    }
+
+    .motion_team_txt {
+      h3 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

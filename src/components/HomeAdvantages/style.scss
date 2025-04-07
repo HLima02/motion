@@ -1,0 +1,64 @@
+.advantages_section {
+  background-color: rgba($color: #20325D, $alpha: 0.95);
+  color: #fff;
+  padding: 100px 5%;
+  font-style: italic;
+  display: flex;
+
+  .advantages_left {
+    width: 35%;
+
+    h2 {
+      font-weight: 200;
+      margin-top: 15px;
+    }
+  }
+
+  .advantages_accordion {
+    width: 65%;
+
+    .accordion {
+      border-radius: 10px;
+      .accordion-item {
+        margin: 20px 0;
+        border-radius: 10px;
+        background-color: #20325D;
+        color: #fff;
+        border: none;
+
+        .accordion-header {
+          
+          button {
+            border-radius: 15px;
+            background-color: #20325D;
+            color: #fff;
+
+            &::after {
+              color: #fff;
+            }
+
+            &:active {
+              outline: none;
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 880px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .advantages_left, .advantages_accordion { width: 100%;}
+
+    .advantages_left {margin-bottom: 40px;}
+  }
+
+  @media only screen and (max-width: 690px){
+    padding: 80px 5%;
+  }
+}

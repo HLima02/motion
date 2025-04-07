@@ -1,0 +1,11 @@
+.form_btn {
+  background-color: #20325D;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 10px;
+  transition: all 0.2s;
+
+  &:hover {
+    box-shadow: 0px 0px 8px #fff;
+  }
+}
