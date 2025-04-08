@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState, useEffect} from 'react'
 
 import Accordion from 'react-bootstrap/Accordion';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -8,8 +8,20 @@ import advantagesList from '../../services/api.advantages'
 
 
 export default function HomeAdvantages() {
+  const [offsetY, setOffsetY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setOffsetY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <section className='advantages_section'>
+    <section className='advantages_section' >
       <div className='advantages_left'>
         <h2>Por que escolher a Motion?</h2>
       </div>
