@@ -1,5 +1,5 @@
 import { useState, useEffect, useContext } from 'react'
-import { Link, useNavigate  } from 'react-router-dom'
+import { Link, useNavigate, useLocation  } from 'react-router-dom'
 
 import { UserContext } from '../../context/store'
 import { motion } from "framer-motion";
@@ -16,6 +16,9 @@ export default function Header() {
   const { menuIsOpen, setMenuIsOpen } = useContext(UserContext)
   const navigate = useNavigate();
 
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+
   function goToModule(e, moduleId){
     e.preventDefault()
     console.log(moduleId)
@@ -27,6 +30,8 @@ export default function Header() {
   }
 
   useEffect(() => {
+
+
     window.addEventListener('scroll', () => {
       if(window.scrollY > 5) {
         setIsFixed( true)
@@ -37,7 +42,7 @@ export default function Header() {
   }, [])
 
   return (
-    <header className={isFixed ? `fixed_header` : ``}>
+    <header className={`${isFixed ? "fixed_header" : ""} ${!isHomePage ? "service_background" : ""} ${menuIsOpen ? "service_background" : ""}`} >
       <div className='header_desktop'>
         <Link to="/"><img src={logo} alt='Logo Motion. Lê-se: Motion'/></Link>
         <nav className='menu_navegacao'>
@@ -48,7 +53,7 @@ export default function Header() {
         </nav>
       </div>
 
-      <div className='header_mobile'>
+      <div className={`header_mobile`} >
         <div className='top_section'>
           <Link to="/"><img src={logoMobile} alt='Logo Motion. Lê-se: M'/></Link>
           <button className='menu_icon' onClick={() => {setMenuIsOpen(!menuIsOpen)}

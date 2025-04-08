@@ -1,7 +1,7 @@
 .motion_team_banner {
   background-color: #fff;
   width: 100%;
-  padding: 100px 5%;
+  padding: 200px 5% 150px;
 
   h1 {
     color: #20325D;
@@ -44,7 +44,7 @@
   }
 
   @media only screen and (max-width: 620px) {
-    padding: 60px 5%; 
+    padding: 150px 5% 60px; 
 
     h1 {
       font-size: 35px;
