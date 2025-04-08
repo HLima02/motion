@@ -2,7 +2,7 @@ export default [
   {
     id: 1,
     title: 'Profissionais Altamente Qualificados',
-    content: 'Todos os nossos especialistas possuem, no mínimo, uma pós-graduação, garantindo um nível de conhecimento e tomada de decisão muito acima do convencional. Aqui, seu tratamento é conduzido por profissionais altamente capacitados, não por generalistas.'
+    content: 'Todos os nossos profissionais são pós graduados nas áreas de atuação, garantindo um nível de conhecimento e tomada de decisão muito acima do convencional. Aqui, seu tratamento é conduzido por profissionais altamente capacitados, não por generalistas.'
   },
   {
     id: 2,
