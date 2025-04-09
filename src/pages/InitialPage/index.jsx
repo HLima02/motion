@@ -10,6 +10,7 @@ import HomeSpaceVideo from '../../components/HomeSpaceVideo'
 import HomeRating from '../../components/HomeRating'
 import HomeContact from '../../components/HomeContact'
 import Footer from '../../components/Footer'
+import WhatsappComponent from '../../components/WhatsappComponent'
 
 export default function InitialPage() {
   const location = useLocation();
@@ -37,6 +38,7 @@ export default function InitialPage() {
       <HomeRating />
       <HomeContact />
       <Footer />
+      <WhatsappComponent />
     </main>
   )
 }
