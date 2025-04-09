@@ -1,10 +1,11 @@
 .banner_home {
-  background-image: url(../../assets/imagens_teste/banner.jpg);
+  background-image: url(../../assets/images/banner.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 220px 5%;
   position: relative;
+  background-attachment: fixed;
 
   .banner_home_content {
     max-width: 900px;

@@ -6,7 +6,7 @@ export default function SliderComponent({coverImg, title, subTitle, linkTxt}) {
   return (
     <div  className='carrossel_slider'>
       <Link to={`/servicos/${linkTxt}`}>
-        <div className=''>
+        <div className='slider_img'>
           <img src={coverImg} alt={title} />  
         </div>
         <h3>{title}</h3>

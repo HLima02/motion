@@ -1,9 +1,12 @@
 import { useEffect, useState } from 'react'
 import Slider from "react-slick";
 
-import img01 from '../../assets/imagens_teste/slider_team/img_02.jpg'
-import img02 from '../../assets/imagens_teste/slider_team/img_03.jpg'
-import img03 from '../../assets/imagens_teste/slider_team/img_04.jpg'
+import img01 from '../../assets/images/img_01.jpg'
+import img02 from '../../assets/images/img_02.jpg'
+import img03 from '../../assets/images/img_03.jpg'
+import img04 from '../../assets/images/img_04.jpg'
+import img05 from '../../assets/images/img_05.jpg'
+import img06 from '../../assets/images/img_06.jpg'
 
 import './style.scss'
 
@@ -46,13 +49,13 @@ export default function MotionTeamSlider() {
           <img src={img03} />
         </div>
         <div className='slide_item'>
-          <img src={img01} />
+          <img src={img04} />
         </div>
         <div className='slide_item'>
-          <img src={img02} />
+          <img src={img05} />
         </div>
         <div className='slide_item'>
-          <img src={img03} />
+          <img src={img06} />
         </div>
       </Slider>
     </section>

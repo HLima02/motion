@@ -1,10 +1,11 @@
-import fisioBanner from '../assets/imagens_teste/fisioterapia_ilustracao.jpg'
-import ortopediaBanner from '../assets/imagens_teste/ortopedia_ilustracao.jpg'
-import esporteBanner from '../assets/imagens_teste/medico_esporte.png'
-import nutricaoBanner from '../assets/imagens_teste/nutricao_ilustracao.jpg'
-import psicologiaBanner from '../assets/imagens_teste/psicologia_ilustracao.jpg'
+import fisioBanner from '../assets/images/servicos/fisioterapia/neto_thumbnail.jpg'
+import ortopediaBanner from '../assets/images/servicos/ortopedia/thumbnail.jpg'
+import esporteBanner from '../assets/images/servicos/medicina_esporte/thumbnail.jpg'
+import nutricaoBanner from '../assets/images/servicos/nutricao/thumbnail.jpg'
+import psicologiaBanner from '../assets/images/servicos/psicologia/thumbnail.jpg'
 
 import fisioImage from '../assets/imagens_teste/fisioterapia.jpg'
+import ortopediaImage from '../assets/images/servicos/ortopedia/thumbnail.jpg'
 
 export default [
   {
@@ -90,7 +91,7 @@ export default [
         id: 1,
         title: 'Psicologia',
         description: 'Equilíbrio mental para uma vida em alto nível. A psicologia vai além da escuta — é um trabalho estratégico que fortalece a mente, aprimora a tomada de decisões e promove bem-estar duradouro. Com uma abordagem precisa e individualizada, auxiliamos no desenvolvimento emocional e no aprimoramento da performance pessoal e profissional, garantindo clareza, resiliência e qualidade de vida.',
-        image: fisioImage
+        image: psicologiaBanner
       }
     ]
   },

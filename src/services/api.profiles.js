@@ -1,6 +1,13 @@
 import profile01 from '../assets/imagens_teste/profile/left_img.jpg'
 import profile02 from '../assets/imagens_teste/profile/right_img.jpg'
 
+import netoMachado from '../assets/images/servicos/fisioterapia/profile_neto.jpg'
+import leoOliveira from '../assets/images/servicos/fisioterapia/profile_leo.jpg'
+import michelOliveira from '../assets/images/servicos/ortopedia/profile_michel.jpg'
+import amandaCarassini from '../assets/images/servicos/psicologia/profile_amanda.jpg'
+import aliceDutra from '../assets/images/servicos/medicina_esporte/profile_alice.jpg'
+import mariaEduarda from '../assets/images/servicos/nutricao/profile_maria.jpg'
+
 export default [
   {
     id: 1,
@@ -12,7 +19,7 @@ export default [
       'Membro da Sociedade Brasileira de Ortopedia e Traumatologia (SBOT)',
       'Membro da Sociedade Brasileira de Cirurgia do Joelho (SBCJ)'
     ],
-    profile: profile01,
+    profile: michelOliveira,
     leftSide: true
   },
   {
@@ -25,7 +32,7 @@ export default [
       'Residência de Medicina do Exercício e do Esporte',
       'Pós- graduação em Nutrologia pela Unifesp'
     ],
-    profile: profile02,
+    profile: aliceDutra,
     leftSide: false
   },
   {
@@ -38,7 +45,7 @@ export default [
       'Pós Graduada em análise do comportamento aplicada aos transtornos do Neuro desenvolvimento e linguagem pela Federal de São Carlos',
       '⁠Mestre em ciência do desenvolvimento Humano pelo Mackenzie'
     ],
-    profile: profile01,
+    profile: amandaCarassini,
     leftSide: true
   },
   {
@@ -52,7 +59,7 @@ export default [
       'Curso Nutricionário ministrado pela nutricionista Marina Gorga e Curso ',
       'Nutrição na prática ministrado pela nutricionista Giovanna Azevedo'
     ],
-    profile: profile02,
+    profile: mariaEduarda,
     leftSide: false
   },
   {
@@ -64,7 +71,7 @@ export default [
       'Bacharel em Fisioterapia pela Universidade Federal de São Paulo',
       'Especialista em fisioterapia do esporte e exercício pelo HCFMUSP'
     ],
-    profile: profile01,
+    profile: netoMachado,
     leftSide: true
   },
   {
@@ -79,7 +86,7 @@ export default [
       'Pós graduando em Fisiologia do exercício do esporte - NEFET',
       'Pós graduando em prepração física e treinamento personalizada de excelência - NEFET'
     ],
-    profile: profile02,
+    profile: leoOliveira,
     leftSide: false
   },
 ]
