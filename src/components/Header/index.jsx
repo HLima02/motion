@@ -43,8 +43,8 @@ export default function Header() {
 
   return (
     <header className={`${isFixed ? "fixed_header" : ""} ${!isHomePage ? "service_background" : ""} ${menuIsOpen ? "service_background" : ""}`} >
-      <div className='header_desktop'>
-        <Link to="/"><img src={logo} alt='Logo Motion. Lê-se: Motion'/></Link>
+      <div data-aos="fade-down" className='header_desktop'>
+        <Link  to="/"><img src={logo} alt='Logo Motion. Lê-se: Motion'/></Link>
         <nav className='menu_navegacao'>
           <a href='#' onClick={(e) => goToModule(e, 'servicos')}>Serviços</a>
           <Link to="/nosso_time" href='#'>Nosso time</Link>
@@ -53,7 +53,7 @@ export default function Header() {
         </nav>
       </div>
 
-      <div className={`header_mobile`} >
+      <div data-aos="fade-down" className={`header_mobile`} >
         <div className='top_section'>
           <Link to="/"><img src={logoMobile} alt='Logo Motion. Lê-se: M'/></Link>
           <button className='menu_icon' onClick={() => {setMenuIsOpen(!menuIsOpen)}

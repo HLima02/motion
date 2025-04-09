@@ -5,7 +5,7 @@ import './style.scss'
 
 export default function HomeContact() {
   return (
-    <section className='address'>
+    <section data-aos="fade-up" className='address'>
       <div className='address_data'>
         <h3>Endereço</h3>
         <p>Rua Fiandeiras, 929 - Itaim Bibi, São Paulo - SP, 04545-006</p>

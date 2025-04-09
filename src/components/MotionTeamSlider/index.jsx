@@ -37,7 +37,7 @@ export default function MotionTeamSlider() {
   };
 
   return (
-    <section className='motion_team_slider'>
+    <section data-aos="fade-in" className='motion_team_slider'>
       <Slider className='' {...settings} >
         <div className='slide_item'>
           <img src={img01} />
