@@ -5,7 +5,6 @@ import FormButton from '../FormButton'
 import './style.scss'
 
 export default function ServiceSlider({specList}) {
-  console.log(specList)
   const settings = {
     dots: false,
     infinite: false,

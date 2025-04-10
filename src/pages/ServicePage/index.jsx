@@ -10,7 +10,7 @@ import services from '../../services/api_services'
 export default function ServicePage() {
   const { service } = useParams()
   const serviceItem = services.find((i) => i.linkTxt === service)
-
+  console.log("Serviço: ", serviceItem)
   return (
     <div>
       <Header />

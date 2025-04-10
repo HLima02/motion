@@ -4,8 +4,13 @@ import esporteBanner from '../assets/images/servicos/medicina_esporte/thumbnail.
 import nutricaoBanner from '../assets/images/servicos/nutricao/thumbnail.jpg'
 import psicologiaBanner from '../assets/images/servicos/psicologia/thumbnail.jpg'
 
-import fisioImage from '../assets/imagens_teste/fisioterapia.jpg'
-import ortopediaImage from '../assets/images/servicos/ortopedia/thumbnail.jpg'
+import fisioImage1 from '../assets/images/servicos/fisioterapia/IMG_9737.jpg'
+import fisioImage2 from '../assets/images/servicos/fisioterapia/IMG_9726.jpg'
+import fisioImage3 from '../assets/images/servicos/fisioterapia/IMG_9697.jpg'
+import ortopediaImage from '../assets/images/servicos/ortopedia/IMG_9646.jpg'
+import medicinaEsporte from '../assets/images/servicos/medicina_esporte/IMG_9773.jpg'
+import nutricao from '../assets/images/servicos/nutricao/thumbnail.jpg'
+import psicologia from '../assets/images/servicos/psicologia/IMG_9660.jpg'
 
 export default [
   {
@@ -19,19 +24,19 @@ export default [
         id: 1,
         title: 'Recovery',
         description: 'Protocolo personalizado de recuperação muscular que combina a eficácia da liberação miofascial com a tecnologia da bota pneumática, proporcionando alívio das tensões, redução de dores e otimização da performance de forma segura e eficiente.',
-        image: fisioImage
+        image: fisioImage1
       },
       {
         id: 2,
         title: 'Prevenção',
         description: 'Estratégia de prevenção que utiliza exercícios específicos para corrigir déficits identificados, reduzindo riscos de lesões e preparando o paciente para treinar ou competir com mais segurança e eficiência.',
-        image: fisioImage
+        image: fisioImage2
       },
       {
         id: 3,
         title: 'Reabilitação',
         description: 'A reabilitação é um processo preciso e individualizado, que restaura a funcionalidade, atua na melhora da dor e aprimora a forma como seu corpo se move. Exclusiva e fundamentada na ciência, essa abordagem une técnica e personalização para proporcionar equilíbrio, conforto e desempenho aprimorado.',
-        image: fisioImage
+        image: fisioImage3
       },
     ]
   },
@@ -46,7 +51,7 @@ export default [
         id: 1,
         title: 'Ortopedia',
         description: 'Cuidado avançado para a estrutura e a mecânica do corpo. Nosso serviço de ortopedia combina conhecimento especializado e tecnologia de ponta para diagnosticar, tratar e prevenir disfunções com máxima precisão. A abordagem é estratégica e individualizada, preservando a integridade do movimento e promovendo uma recuperação sólida, segura e definitiva.',
-        image: fisioImage
+        image: ortopediaImage
       }
     ]
   },
@@ -61,7 +66,7 @@ export default [
         id: 1,
         title: 'Medicina do Esporte',
         description: 'A medicina esportiva cuida da saúde de quem pratica esportes, desde iniciantes até atletas de alta performance. Com foco na prevenção, no tratamento de lesões e na otimização do desempenho, alia conhecimento médico e tecnologia para garantir segurança, evolução e longevidade na prática esportiva.',
-        image: fisioImage
+        image: medicinaEsporte
       }
     ]
   },
@@ -76,7 +81,7 @@ export default [
         id: 1,
         title: 'Nutrição',
         description: 'Alimentação como base para equilíbrio e desempenho. A nutrição vai além de dietas — é um cuidado estratégico que considera cada detalhe do seu metabolismo, promovendo energia, recuperação e bem-estar. Com um olhar preciso e abordagem personalizada, ajustamos sua alimentação para atender às necessidades do seu corpo, garantindo vitalidade e alta performance no dia a dia.',
-        image: fisioImage
+        image: nutricao
       }
     ]
   },
@@ -91,7 +96,7 @@ export default [
         id: 1,
         title: 'Psicologia',
         description: 'Equilíbrio mental para uma vida em alto nível. A psicologia vai além da escuta — é um trabalho estratégico que fortalece a mente, aprimora a tomada de decisões e promove bem-estar duradouro. Com uma abordagem precisa e individualizada, auxiliamos no desenvolvimento emocional e no aprimoramento da performance pessoal e profissional, garantindo clareza, resiliência e qualidade de vida.',
-        image: psicologiaBanner
+        image: psicologia
       }
     ]
   },
