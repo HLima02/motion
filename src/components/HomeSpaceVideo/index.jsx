@@ -10,7 +10,10 @@ export default function HomeSpaceVideo() {
 
       <div>
         <video width="100%" controls>
-          <source src="https://pu2s0mmwr4wl1xus.public.blob.vercel-storage.com/motion_clinica-1faLeUYJwU7asyJLE60kYV8F86I4Ic.mp4" type="video/mp4" />
+          <source src="https://pu2s0mmwr4wl1xus.public.blob.vercel-storage.com/motion_clinica-1faLeUYJwU7asyJLE60kYV8F86I4Ic.mp4?autoplay=1&mute=1" 
+          type="video/mp4" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen/>
         </video>
       </div>
     </section>

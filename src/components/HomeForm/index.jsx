@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { IMaskInput } from 'react-imask';
 import { toast } from 'react-toastify';
 import './style.scss'
+import emailjs from '@emailjs/browser'
 
 export default function HomeForm() {
   const [nome, setNome] = useState('')
@@ -14,7 +15,31 @@ export default function HomeForm() {
     e.preventDefault()
 
     if(nome != '' && email != '' && telefone != '' && especialidade != ''){
-      toast.success('Nossa equipe entrará em contato! Obrigado')
+      const templateParams = {
+        from_name: nome,
+        email: email,
+        message: `
+          Nome: ${nome}
+          Telefone: ${telefone}
+          Email: ${email}
+          Especialidade: ${especialidade}
+        `
+
+      }
+      
+      emailjs.send("service_85c4xp8", "template_xqyroim", templateParams, "bIQ5ygNbakn22Kt1B")
+      .then((response) => {
+        toast.success('Nossa equipe entrará em contato! Obrigado')
+        console.log(response.status, response.text)
+
+        setNome("")
+        setEmail("")
+        setTelefone("")
+        setEspecialidade("")
+      }, (err) => {
+        console.log("Erro: ", err)
+      })
+      
     } else {
       toast.warning('Preencha todos os campos, por favor.')
     }
