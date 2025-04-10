@@ -11,7 +11,7 @@ export default function HomeContact() {
         <p>Rua Fiandeiras, 929 - Itaim Bibi, São Paulo - SP, 04545-006</p>
 
         <h3>Horário de funcionamento</h3>
-        <p>Email: email@gmail.com</p>
+        <p>Email: clinica.motion929@gmail.com </p>
         <p>Telefone: (11) 99447-0472</p>
 
         <h3 className='agende_title'>Agende sua consulta e transforme sua saúde</h3>
