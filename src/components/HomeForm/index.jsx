@@ -27,7 +27,7 @@ export default function HomeForm() {
 
       }
       
-      emailjs.send("service_85c4xp8", "template_xqyroim", templateParams, "bIQ5ygNbakn22Kt1B")
+      emailjs.send("service_nrv1uh8", "template_qg3hloq", templateParams, "Bl03ljHngiGfG-Yv7")
       .then((response) => {
         toast.success('Nossa equipe entrará em contato! Obrigado')
         console.log(response.status, response.text)
