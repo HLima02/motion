@@ -6,6 +6,7 @@ import ServiceBanner from '../../components/ServiceBanner'
 import ServiceSlider from '../../components/ServiceSlider'
 import Footer from '../../components/Footer'
 import services from '../../services/api_services'
+import WhatsappComponent from '../../components/WhatsappComponent'
 
 export default function ServicePage() {
   const { service } = useParams()
@@ -17,6 +18,7 @@ export default function ServicePage() {
       <ServiceBanner title={serviceItem.title} />
       <ServiceSlider specList={serviceItem.serviceDetail} />
       <Footer/>
+      <WhatsappComponent />
     </div>
   )
 }

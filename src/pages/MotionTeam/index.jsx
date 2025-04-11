@@ -5,6 +5,7 @@ import MotionTeamBanner from '../../components/MotionTeamBanner'
 import MotionTeamSlider from '../../components/MotionTeamSlider'
 import MotionProfileSection from '../../components/MotionProfileSection'
 import Footer from '../../components/Footer'
+import WhatsappComponent from '../../components/WhatsappComponent'
 
 export default function MotionTeam() {
   return (
@@ -14,6 +15,7 @@ export default function MotionTeam() {
       <MotionTeamSlider />
       <MotionProfileSection />
       <Footer />
+      <WhatsappComponent />
     </div>
   )
 }
