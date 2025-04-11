@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import { useNavigate } from 'react-router-dom'
 import { IMaskInput } from 'react-imask';
 import { toast } from 'react-toastify';
 import './style.scss'
@@ -10,6 +10,7 @@ export default function HomeForm() {
   const [email, setEmail] = useState('')
   const [telefone, setTelefone] = useState('')
   const [especialidade, setEspecialidade] = useState('')
+  const navigate = useNavigate()
 
   function handleSubmit(e){
     e.preventDefault()
@@ -29,13 +30,14 @@ export default function HomeForm() {
       
       emailjs.send("service_nrv1uh8", "template_qg3hloq", templateParams, "Bl03ljHngiGfG-Yv7")
       .then((response) => {
-        toast.success('Nossa equipe entrará em contato! Obrigado')
-        console.log(response.status, response.text)
+        // toast.success('Nossa equipe entrará em contato! Obrigado')
 
         setNome("")
         setEmail("")
         setTelefone("")
         setEspecialidade("")
+
+        navigate('/agradecimento')
       }, (err) => {
         console.log("Erro: ", err)
       })

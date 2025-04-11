@@ -4,6 +4,7 @@ import InitialPage from './pages/InitialPage'
 import MotionTeam from './pages/MotionTeam'
 import StoreProvider from './context/store'
 import ServicePage from './pages/ServicePage'
+import ThankyouPage from './pages/ThankyouPage'
 import './global.style.scss'
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
           <Route path='/' element={<InitialPage/>} />
           <Route path='/nosso_time' element={<MotionTeam/>} />
           <Route path='/servicos/:service' element={<ServicePage/>} />
+          <Route path='/agradecimento' element={<ThankyouPage/>} />
         </Routes>
       </BrowserRouter>
     </StoreProvider>

@@ -1,0 +1,27 @@
+.thankyou_section {
+  min-height: 80vh !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #212121;
+  text-align: center;
+
+  .social_icons {
+    margin: 30px 0;
+    span {
+      margin: 0 10px;
+    }
+    a {
+      color: #212121;
+    }
+  }
+
+  .link_home {
+    color: #212121;
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  
+}
