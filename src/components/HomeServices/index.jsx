@@ -52,7 +52,7 @@ export default function HomeServices() {
   };
 
   return (
-    <section data-aos="fade-up" className='home_services' id='servicos'>
+    <section className='home_services' id='servicos'>
       <h2>Nossos Serviços Especializados para a Sua Saúde</h2>
 
       <Slider {...settings}  className='carrossel_section'>

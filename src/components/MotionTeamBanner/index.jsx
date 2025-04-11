@@ -4,7 +4,7 @@ import './style.scss'
 
 export default function MotionTeamBanner() {
   return (
-    <section data-aos="fade-up" className='motion_team_banner'>
+    <section className='motion_team_banner'>
       <h1>Sobre a Motion</h1>
       <div className='motion_team_txt'>
         <h3>Uma equipe especializada e apaixonada pela sua saúde!</h3>

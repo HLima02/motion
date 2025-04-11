@@ -21,6 +21,8 @@
       }
 
       .service_left {
+        overflow: hidden;
+
         img {
           width: 100%;
           height: auto;
@@ -79,13 +81,15 @@
           max-height: 350px;
           border-radius: 50%;
 
-          img {
-            border-radius: 50%;
-          }
+    
         }
 
         .service_right {
           text-align: center;
+
+          p {
+            text-align: justify;
+          }
         }
       }
     }

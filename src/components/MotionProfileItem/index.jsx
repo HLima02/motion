@@ -5,10 +5,10 @@ export default function MotionProfileItem({leftSide, profile, name, specializati
 
   return (
     <div className={`profile_content ${leftSide ? 'left_img' : 'right_img'}`}>
-      <div data-aos="fade-right" className='profile'>
+      <div className='profile'>
         <img src={profile} />
       </div>
-      <div data-aos="fade-left" className='especialization'>
+      <div className='especialization'>
         <h3 className='name'>{name}</h3>
         <h4 className='profile_especialization'>{specialization}</h4>
 

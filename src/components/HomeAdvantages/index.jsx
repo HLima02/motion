@@ -22,10 +22,10 @@ export default function HomeAdvantages() {
 
   return (
     <section className='advantages_section' >
-      <div data-aos="fade-right" className='advantages_left'>
+      <div className='advantages_left'>
         <h2>Por que escolher a Motion?</h2>
       </div>
-      <div data-aos="fade-left" className='advantages_accordion'>
+      <div className='advantages_accordion'>
         <Accordion defaultActiveKey="0">
           {advantagesList.map((item) => (
             <Accordion.Item key={item.id} eventKey={item.id}>

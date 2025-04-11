@@ -5,7 +5,7 @@ import './style.scss'
 
 export default function Footer() {
   return (
-    <footer data-aos="fade-up">
+    <footer>
       <p className='footer_txt'>Cuidamos da sua saúde com um atendimento completo e personalizado!</p>
       <div className='footer_container'>
         <img src={logo} alt='Logo Motion. Lê-se: Motion'/>

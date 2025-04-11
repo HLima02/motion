@@ -52,7 +52,7 @@ export default function HomeRating() {
   };
   
   return (
-    <section data-aos="fade-up" className='rating_section'>
+    <section className='rating_section'>
       <div className='rating_content'>
         <h2>O QUE DIZEM NOSSOS PACIENTES?</h2>
 

@@ -13,7 +13,7 @@ export default function HomeSpaceVideo() {
   };
 
   return (
-    <section data-aos="fade-up" className='video_section' id='nosso_espaco'>
+    <section className='video_section' id='nosso_espaco'>
       <h2>NOSSO ESPAÇO</h2>
 
       <div className='iframe_section'>
