@@ -21,12 +21,13 @@ export default function Header() {
 
   function goToModule(e, moduleId){
     e.preventDefault()
-    console.log(moduleId)
+
     if (window.location.pathname === "/") {
       document.getElementById(moduleId)?.scrollIntoView({ behavior: "smooth" });
     } else {
       navigate(`/?scrollTo=${moduleId}`);
     }
+    setMenuIsOpen(false)
   }
 
   useEffect(() => {
@@ -72,7 +73,7 @@ export default function Header() {
       >
         <ul className='bottom_section'  >
           <li><a href='#' onClick={(e) => goToModule(e, 'servicos')}>Serviços</a></li>
-          <li> <Link to="/nosso_time">Nosso time</Link></li>
+          <li> <Link to="/nosso_time" onClick={() => setMenuIsOpen(false)}>Nosso time</Link></li>
           <li><a href='#' onClick={(e) => goToModule(e, 'nosso_espaco')}> Nosso espaço</a></li>
           <li><FormButton/></li>
         </ul> 

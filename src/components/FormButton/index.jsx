@@ -1,9 +1,12 @@
-import React from 'react'
+import { useContext } from 'react'
 import { useNavigate  } from 'react-router-dom'
 import './style.scss'
 
+import { UserContext } from '../../context/store'
+
 export default function FormButton() {
   const navigate = useNavigate();
+  const { menuIsOpen, setMenuIsOpen } = useContext(UserContext)
   
   function goToModule(e, moduleId){
     e.preventDefault()
@@ -13,6 +16,8 @@ export default function FormButton() {
     } else {
       navigate(`/?scrollTo=${moduleId}`);
     }
+
+    setMenuIsOpen(false)
   }
 
   return (
