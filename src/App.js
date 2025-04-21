@@ -14,8 +14,8 @@ export default function App() {
         <Routes>
           <Route path='/' element={<InitialPage/>} />
           <Route path='/nosso_time' element={<MotionTeam/>} />
-          <Route path='/servicos/:service' element={<ServicePage/>} />
           <Route path='/agradecimento' element={<ThankyouPage/>} />
+          <Route path='/servicos/:service' element={<ServicePage/>} />
         </Routes>
       </BrowserRouter>
     </StoreProvider>
