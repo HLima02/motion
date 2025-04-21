@@ -11,6 +11,7 @@ import HomeRating from '../../components/HomeRating'
 import HomeContact from '../../components/HomeContact'
 import Footer from '../../components/Footer'
 import WhatsappComponent from '../../components/WhatsappComponent'
+import InstagramComponent from '../../components/InstagramComponent'
 
 export default function InitialPage() {
   const location = useLocation();
@@ -39,6 +40,7 @@ export default function InitialPage() {
       <HomeContact />
       <Footer />
       <WhatsappComponent />
+      <InstagramComponent/>
     </main>
   )
 }

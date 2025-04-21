@@ -6,6 +6,7 @@ import Footer from '../../components/Footer'
 
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { FaFacebookSquare } from "react-icons/fa";
+import { FaWhatsappSquare } from "react-icons/fa";
 
 import './style.scss'
 
@@ -30,8 +31,8 @@ export default function ThankyouPage() {
 
        <div className='social_icons'>
           <p>Nos siga nas redes sociais:</p>
-          <span><a href="#" target="_blank"><BiLogoInstagramAlt size={29}/></a></span> | 
-          <span><a href="#" target="_blank"><FaFacebookSquare size={25}/></a></span>
+          <span><a href="https://www.instagram.com/clinica.motion/" target="_blank"><BiLogoInstagramAlt size={29}/></a></span> | 
+          <span><a  href="https://wa.me/11994470472" target="_blank"><FaWhatsappSquare size={25}/></a></span>
       </div>
 
       <Link className='link_home' to="/">Voltar para a página inicial</Link>

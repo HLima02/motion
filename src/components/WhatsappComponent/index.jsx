@@ -5,7 +5,7 @@ import './style.scss'
 export default function WhatsappComponent () {
   return (
     <a className='whatsapp_icon'
-      href="https://wa.me/11994470472" // Substitua pelo seu número
+      href="https://wa.me/11994470472"
       target="_blank"
       rel="noopener noreferrer"
     >
