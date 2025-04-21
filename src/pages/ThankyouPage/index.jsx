@@ -1,4 +1,4 @@
-import React from 'react'
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 import Header from '../../components/Header'
@@ -10,6 +10,17 @@ import { FaFacebookSquare } from "react-icons/fa";
 import './style.scss'
 
 export default function ThankyouPage() {
+  useEffect(() => {
+    // Verifica se a função gtag está disponível no escopo global
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'conversion', {
+        send_to: 'AW-17024527524/3N_ZCKrI0LsaEKTZ9rU_',
+        value: 1.0,
+        currency: 'BRL'
+      })
+    }
+  }, [])
+  
   return (
     <main>
       <Header />

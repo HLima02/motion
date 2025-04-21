@@ -12,6 +12,27 @@ export default function HomeForm() {
   const [especialidade, setEspecialidade] = useState('')
   const navigate = useNavigate()
 
+  function gtag_report_conversion(url) {
+    const callback = () => {
+      if (typeof url !== 'undefined') {
+        window.location.href = url;
+      }
+    };
+  
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'conversion', {
+        send_to: 'AW-17024527524/3N_ZCKrI0LsaEKTZ9rU_',
+        value: 1.0,
+        currency: 'BRL',
+        event_callback: callback
+      });
+    } else {
+      callback(); // fallback se gtag ainda não carregou
+    }
+  
+    return false;
+  }
+
   function handleSubmit(e){
     e.preventDefault()
 
@@ -41,6 +62,8 @@ export default function HomeForm() {
       }, (err) => {
         console.log("Erro: ", err)
       })
+
+      gtag_report_conversion('/agradecimento')
       
     } else {
       toast.warning('Preencha todos os campos, por favor.')
