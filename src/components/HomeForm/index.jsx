@@ -12,7 +12,7 @@ export default function HomeForm() {
   const [especialidade, setEspecialidade] = useState('')
   const navigate = useNavigate()
 
-  function gtag_report_conversion(url) {
+  function gtagReportConversion(url) {
     const callback = () => {
       if (typeof url !== 'undefined') {
         window.location.href = url;
@@ -24,13 +24,12 @@ export default function HomeForm() {
         send_to: 'AW-17024527524/3N_ZCKrI0LsaEKTZ9rU_',
         value: 1.0,
         currency: 'BRL',
-        event_callback: callback
+        event_callback: callback,
       });
     } else {
-      callback(); // fallback se gtag ainda não carregou
+      // Fallback direto, caso o gtag ainda não tenha carregado
+      callback();
     }
-  
-    return false;
   }
 
   function handleSubmit(e){
@@ -46,24 +45,23 @@ export default function HomeForm() {
           Email: ${email}
           Especialidade: ${especialidade}
         `
-
       }
       
       emailjs.send("service_nrv1uh8", "template_qg3hloq", templateParams, "Bl03ljHngiGfG-Yv7")
       .then((response) => {
-        // toast.success('Nossa equipe entrará em contato! Obrigado')
 
         setNome("")
         setEmail("")
         setTelefone("")
         setEspecialidade("")
 
-        navigate('/agradecimento')
+       // navigate('/agradecimento')
+        gtagReportConversion('/agradecimento')
       }, (err) => {
         console.log("Erro: ", err)
       })
 
-      gtag_report_conversion('/agradecimento')
+      //gtag_report_conversion()
       
     } else {
       toast.warning('Preencha todos os campos, por favor.')
