@@ -6,6 +6,7 @@ import MotionTeamSlider from '../../components/MotionTeamSlider'
 import MotionProfileSection from '../../components/MotionProfileSection'
 import Footer from '../../components/Footer'
 import WhatsappComponent from '../../components/WhatsappComponent'
+import InstagramComponent from '../../components/InstagramComponent'
 
 export default function MotionTeam() {
   return (
@@ -16,6 +17,7 @@ export default function MotionTeam() {
       <MotionProfileSection />
       <Footer />
       <WhatsappComponent />
+      <InstagramComponent />
     </div>
   )
 }

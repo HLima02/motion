@@ -7,6 +7,7 @@ import ServiceSlider from '../../components/ServiceSlider'
 import Footer from '../../components/Footer'
 import services from '../../services/api_services'
 import WhatsappComponent from '../../components/WhatsappComponent'
+import InstagramComponent from '../../components/InstagramComponent'
 
 export default function ServicePage() {
   const { service } = useParams()
@@ -19,6 +20,7 @@ export default function ServicePage() {
       <ServiceSlider specList={serviceItem.serviceDetail} />
       <Footer/>
       <WhatsappComponent />
+      <InstagramComponent />
     </div>
   )
 }
