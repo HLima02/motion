@@ -31,8 +31,6 @@ export default function Header() {
   }
 
   useEffect(() => {
-
-
     window.addEventListener('scroll', () => {
       if(window.scrollY > 5) {
         setIsFixed( true)

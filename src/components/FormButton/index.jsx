@@ -25,7 +25,10 @@ export default function FormButton({ classe, label }) {
   return (
     // <a href='#' onClick={(e) => goToModule(e, 'formulario')} className='form_btn'>Agende sua consulta</a>
     <a 
-    href='https://api.whatsapp.com/send/?phone=5511994470472&text=Oi,+tudo+bem%3F+Gostaria+de+agendar+minha+visita.&type=phone_number&app_absent=0' 
+    href={
+      label ? 
+      'https://api.whatsapp.com/send/?phone=5511994470472&text=Oi,+tudo+bem%3F+Gostaria+de+agendar+minha+visita.&type=phone_number&app_absent=0' :
+      'https://api.whatsapp.com/send/?phone=5511994470472&text=Oi,+tudo+bem%3F+Gostaria+de+agendar+minha+consulta.&type=phone_number&app_absent=0'  }
     className={`form_btn  ${classe}`}
     target='_blank'
     >{label ? label : 'Agende sua consulta'}</a>
