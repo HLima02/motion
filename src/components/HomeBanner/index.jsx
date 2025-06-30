@@ -9,7 +9,7 @@ export default function HomeBanner() {
         <h1>Seu movimento é o que nos move</h1>
         <p>Nossa clínica reúne uma <b>equipe multidisciplinar</b> para um tratamento integrado e eficaz.</p>
         <div className='banner_home_form_area'>
-          <FormButton classe="text_200" />
+          <FormButton classe="text_200" label="Agende sua visita" />
         </div>
       </div>
     </section>

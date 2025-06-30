@@ -67,7 +67,7 @@
   }
 
   @media only screen and (max-width: 900px) {
-    .home_form_content {
+    .home_form_content_bottom {
       border-radius: 0;
       padding: 50px 5%;
 
@@ -92,7 +92,9 @@
   }
 
   @media only screen and (max-width: 690px) {
-    .home_form_content {
+    padding: 10px 5%;
+    
+    .home_form_content_bottom {
       flex-direction: column;
       align-items: center;
       text-align: center;

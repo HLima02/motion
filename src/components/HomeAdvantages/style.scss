@@ -86,6 +86,10 @@
     align-items: center;
     text-align: center;
 
+    .advantages_section_top {
+      flex-direction: column;
+    }
+
     .advantages_left, .advantages_accordion { width: 100%;}
 
     .advantages_left {margin-bottom: 40px;}
