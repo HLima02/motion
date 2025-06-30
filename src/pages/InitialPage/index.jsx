@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 import Header from '../../components/Header'
 import HomeBanner from '../../components/HomeBanner'
 import HomeForm from '../../components/HomeForm'
+import HomeFormBottom from '../../components/HomeFormBottom';
 import HomeServices from '../../components/HomeServices'
 import HomeAdvantages from '../../components/HomeAdvantages'
 import HomeSpaceVideo from '../../components/HomeSpaceVideo'
@@ -32,12 +33,13 @@ export default function InitialPage() {
     <main>
       <Header />
       <HomeBanner />
-      <HomeForm />
+      {/* <HomeForm /> */}
       <HomeServices />
       <HomeAdvantages />
       <HomeSpaceVideo />
       <HomeRating />
       <HomeContact />
+      <HomeFormBottom/>
       <Footer />
       <WhatsappComponent />
       <InstagramComponent/>

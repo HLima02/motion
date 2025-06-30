@@ -50,7 +50,7 @@ export default function Header() {
           <a href='#' onClick={(e) => goToModule(e, 'servicos')}>Serviços</a>
           <Link to="/nosso_time" href='#'>Nosso time</Link>
           <a href='#' onClick={(e) => goToModule(e, 'nosso_espaco')}>Nosso espaço</a>
-          <FormButton/>
+          <FormButton classe="text_100" />
         </nav>
       </div>
 
@@ -75,7 +75,7 @@ export default function Header() {
           <li><a href='#' onClick={(e) => goToModule(e, 'servicos')}>Serviços</a></li>
           <li> <Link to="/nosso_time" onClick={() => setMenuIsOpen(false)}>Nosso time</Link></li>
           <li><a href='#' onClick={(e) => goToModule(e, 'nosso_espaco')}> Nosso espaço</a></li>
-          <li><FormButton/></li>
+          <li><FormButton classe="text_100" /></li>
         </ul> 
       </motion.div> 
       

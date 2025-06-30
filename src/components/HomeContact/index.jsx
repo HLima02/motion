@@ -11,12 +11,12 @@ export default function HomeContact() {
         <p>Rua Fiandeiras, 929 - Itaim Bibi, São Paulo - SP, 04545-006</p>
 
         <h3>Horário de funcionamento</h3>
-        <p>Email: clinica.motion929@gmail.com </p>
-        <p>Telefone: (11) 99447-0472</p>
+        <p>Email: <a className='contact' href='mailto:clinica.motion929@gmail.com'>clinica.motion929@gmail.com</a> </p>
+        <p>Telefone: <a className='contact' href='tel:11994470472'>(11) 99447-0472</a></p>
 
         <h3 className='agende_title'>Agende sua consulta e transforme sua saúde</h3>
 
-        <FormButton />
+        <FormButton classe="text_100" />
       </div>
 
       <div className='address_map'>
