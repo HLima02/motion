@@ -87,7 +87,7 @@ export default function HomeFormBottom() {
             <option value="psicologia">Psicologia</option>
           </select>
 
-          <button type='submit'>Agende sua consulta</button>
+          <button type='submit'>Agendar consulta</button>
         </form>
       </div>
       
